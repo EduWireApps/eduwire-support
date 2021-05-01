@@ -1,7 +1,7 @@
 {
-  "name": "manageinvite-support",
+  "name": "eduwire-support",
   "version": "1.0.0",
-  "description": "Support Discord bot for the ManageInvite's Lounge server",
+  "description": "Support Discord bot for the EduWire server",
   "main": "index.js",
   "author": "Androz2091 <androz2091@gmail.com>",
   "license": "MIT",

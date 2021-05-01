@@ -1,3 +1,3 @@
-# ManageInvite Support
+# EduWire Support
 
-This bot is made to help people using **[ManageInvite](https://github.com/Androz2091/ManageInvite/)** bot. This is a private bot, only available on the **[ManageInvite's Lounge](https://discord.gg/N99PJgE)** Discord server.
+Ce bot est pensé pour aider les utilisateurs des applications d'**[EduWire](https://github.com/EduWire/)**. Ce bot est privé, seulement disponible sur le serveur d'**[EduWire](https://discord.gg/f923ePxXNS)**.
