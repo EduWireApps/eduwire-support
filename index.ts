@@ -19,7 +19,7 @@ const ynotesContent =
 
 ${issuesYnotes.map((issue, index) => {
     return `\`${++index}\` - ${issue.name}`
-})}`;
+}).join('\n')}`;
 
 const notifContent =
 `
@@ -27,7 +27,7 @@ const notifContent =
 
 ${issuesNotif.map((issue, index) => {
     return `\`${++index}\` - ${issue.name}`
-})}
+}).join('\n')}
 `
 
 client.on('ready', async () => {
@@ -105,29 +105,29 @@ client.on('message', (message) => {
     if(message.partial) return;
     if(message.author.bot) return;
     if(message.channel.id === config.supportYnotesChannel){
-        const answer = issuesYnotes.find((i, indx) => indx.toString() === message.content);
+        const answer = issuesYnotes.find((i, indx) => (indx+1).toString() === message.content);
         if (answer) {
             sendAndDeleteAfter(
                 message,
-                `Salut ${message.author}! ${answer}`
+                `Salut ${message.author.toString()}! ${answer.answer}`
             );
         } else {
             sendAndDeleteAfter(
                 message,
-                `Bonjour ${message.author}, veuillez envoyer le numéro du problème que vous recontrez.`
+                `Bonjour ${message.author.toString()}, veuillez envoyer le numéro du problème que vous recontrez.`
             );
         }
     } else if(message.channel.id === config.supportNotifChannel) {
-        const answer = issuesNotif.find((i, indx) => indx.toString() === message.content);
+        const answer = issuesNotif.find((i, indx) => (indx+1).toString() === message.content);
         if (answer) {
             sendAndDeleteAfter(
                 message,
-                `Salut ${message.author}! ${answer}`
+                `Salut ${message.author.toString()}! ${answer.answer}`
             );
         } else {
             sendAndDeleteAfter(
                 message,
-                `Bonjour ${message.author}, veuillez envoyer le numéro du problème que vous recontrez.`
+                `Bonjour ${message.author.toString()}, veuillez envoyer le numéro du problème que vous recontrez.`
             );
         }
     }
