@@ -1,34 +1,33 @@
 import { Client, TextChannel, Snowflake, Message, Collection } from 'discord.js';
 import * as config from './config.json';
+import issuesNotif from './issues-pnotif.json';
+import issuesYnotes from './issues-ynotes.json';
 
 const client = new Client({
     partials: [ "MESSAGE" ],
     fetchAllMembers: true
 });
 
+client.login(config.token);
+
 let notifChannel: TextChannel = null;
 let ynotesChannel: TextChannel = null;
 let initialNotifMessageID: Snowflake = null;
 let initialYnotesMessageID: Snowflake = null;
-
 const ynotesContent = 
 `**Tapez le numéro de votre problème et je ferai de mon mieux pour vous aider !**
 
-\`1\` - I want to setup the bot (join/leave messages, prefix, etc...)
-\`2\` - I want to use the web dashboard
-\`3\` - I want to know how to use the bot
-\`4\` - ManageInvite says my server needs to be upgraded
-\`5\` - My problem is not in the list`;
+${issuesYnotes.map((issue, index) => {
+    return `\`${++index}\` - ${issue.name}`
+})}`;
 
 const notifContent =
 `
 **Tapez le numéro de votre problème et je ferai de mon mieux pour vous aider !**
 
-\`1\` - I want to setup the bot (join/leave messages, prefix, etc...)
-\`2\` - I want to use the web dashboard
-\`3\` - I want to know how to use the bot
-\`4\` - ManageInvite says my server needs to be upgraded
-\`5\` - My problem is not in the list
+${issuesNotif.map((issue, index) => {
+    return `\`${++index}\` - ${issue.name}`
+})}
 `
 
 client.on('ready', async () => {
@@ -106,34 +105,30 @@ client.on('message', (message) => {
     if(message.partial) return;
     if(message.author.bot) return;
     if(message.channel.id === config.supportYnotesChannel){
-        switch(message.content){
-            case "1":
-                sendAndDeleteAfter(
-                    message,
-                    `Salut ${message.author}! (ynotes)`
-                );
-                break;
-            default:
-                sendAndDeleteAfter(
-                    message,
-                    `Bonjour ${message.author.toString()}, veuillez envoyer le numéro du problème que vous recontrez.`
-                );
+        const answer = issuesYnotes.find((i, indx) => indx.toString() === message.content);
+        if (answer) {
+            sendAndDeleteAfter(
+                message,
+                `Salut ${message.author}! ${answer}`
+            );
+        } else {
+            sendAndDeleteAfter(
+                message,
+                `Bonjour ${message.author}, veuillez envoyer le numéro du problème que vous recontrez.`
+            );
         }
     } else if(message.channel.id === config.supportNotifChannel) {
-        switch(message.content){
-            case "1":
-                sendAndDeleteAfter(
-                    message,
-                    `Salut ${message.author}! (pronote notifications)`
-                );
-                break;
-            default:
-                sendAndDeleteAfter(
-                    message,
-                    `Bonjour ${message.author.toString()}, veuillez envoyer le numéro du problème que vous recontrez.`
-                );
+        const answer = issuesNotif.find((i, indx) => indx.toString() === message.content);
+        if (answer) {
+            sendAndDeleteAfter(
+                message,
+                `Salut ${message.author}! ${answer}`
+            );
+        } else {
+            sendAndDeleteAfter(
+                message,
+                `Bonjour ${message.author}, veuillez envoyer le numéro du problème que vous recontrez.`
+            );
         }
     }
 });
-
-client.login(config.token);

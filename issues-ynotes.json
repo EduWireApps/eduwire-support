@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Qu'est ce que yNotes ?",
+        "answer": "yNotes est une appli mobile créée dans le but de permettre aux étudiants d'accéder à leurs notes, leurs devoirs et bien plus dans une application moderne et puissante."
+    },
+    {
+        "name": "Pourquoi devrais-je utiliser yNotes ?",
+        "answer": "yNotes est sécurisée, respectueuse de la confidentialité, open source et ajoute de nombreuses fonctionnalités spéciales."
+    },
+    {
+        "name": "Comment télécharger yNotes ?",
+        "answer": "Consultez le site officiel : **<https://ynotes.fr/>**\n\nSur le Google Play Store :\n<https://play.google.com/store/apps/details?id=fr.ynotes>\n\nSur l'App Store :\n<https://apps.apple.com/fr/app/ynotes/id1563624059>\n\nDepuis le repo. GitHub :\n<https://github.com/ModernChocolate/ynotes>"
+    }
+]
