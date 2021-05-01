@@ -114,7 +114,7 @@ client.on('message', (message) => {
         } else {
             sendAndDeleteAfter(
                 message,
-                `Bonjour ${message.author.toString()}, veuillez envoyer le numéro du problème que vous recontrez.`
+                `Bonjour ${message.author.toString()}, veuillez envoyer le numéro du problème que vous rencontrez.`
             );
         }
     } else if(message.channel.id === config.supportNotifChannel) {
@@ -127,7 +127,7 @@ client.on('message', (message) => {
         } else {
             sendAndDeleteAfter(
                 message,
-                `Bonjour ${message.author.toString()}, veuillez envoyer le numéro du problème que vous recontrez.`
+                `Bonjour ${message.author.toString()}, veuillez envoyer le numéro du problème que vous rencontrez.`
             );
         }
     }
