@@ -10,5 +10,21 @@
     {
         "name": "Comment télécharger yNotes ?",
         "answer": "Consultez le site officiel : **<https://ynotes.fr/>**\n\nSur le Google Play Store :\n<https://play.google.com/store/apps/details?id=fr.ynotes>\n\nSur l'App Store :\n<https://apps.apple.com/fr/app/ynotes/id1563624059>\n\nDepuis le repo. GitHub :\n<https://github.com/ModernChocolate/ynotes>"
+    },
+    {
+        "name": "Est ce que mon service scolaire est compatible ?",
+        "answer": "yNotes est actuellement compatible avec Ecole Directe et encore partiellement avec Pronote."
+    },
+    {
+        "name": "Mon service scolaire n'est pas référencé !",
+        "answer": "Tu peux demander à ce qu'il le soit dans le channel <#838042235034533929>. Ou si tu es développeur, consulte la documentation GitHub et effectue une pull request, c'est assez facile d'ajouter un service scolaire grâce à notre API interne"
+    },
+    {
+        "name": "Pourquoi ce nom yNotes ?",
+        "answer": "La question m'a souvent été posée ! Le nom de l'application ne se pronnonce pas \"i grec notes\", mais Why not (\"pourquoi pas\"). Le sens est plus explicite dans la vidéo de campagne, mais je retravaille à l'édition de cette dernière."
+    },
+    {
+        "name": "Pourquoi devrais-je utiliser yNotes ?",
+        "answer": "why not ? xD"
     }
 ]

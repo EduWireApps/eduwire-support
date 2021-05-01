@@ -15,7 +15,7 @@ let ynotesChannel: TextChannel = null;
 let initialNotifMessageID: Snowflake = null;
 let initialYnotesMessageID: Snowflake = null;
 const ynotesContent = 
-`**Tapez le numéro de votre problème et je ferai de mon mieux pour vous aider !**
+`**Tapez le numéro de votre question et je ferai de mon mieux pour vous aider !**
 
 ${issuesYnotes.map((issue, index) => {
     return `\`${++index}\` - ${issue.name}`
@@ -23,11 +23,11 @@ ${issuesYnotes.map((issue, index) => {
 
 const notifContent =
 `
-**Tapez le numéro de votre problème et je ferai de mon mieux pour vous aider !**
+**Tapez le numéro de votre question et je ferai de mon mieux pour vous aider !**
 
-${issuesNotif.map((issue, index) => {
+${issuesNotif.length > 0 ? issuesNotif.map((issue, index) => {
     return `\`${++index}\` - ${issue.name}`
-}).join('\n')}
+}).join('\n') : 'Aucune question disponible pour le moment.'}
 `
 
 client.on('ready', async () => {
