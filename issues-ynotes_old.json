@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Qu'est ce que yNotes ?",
+        "answer": "yNotes est une appli mobile créée dans le but de permettre aux étudiants d'accéder à leurs notes, leurs devoirs et bien plus dans une application moderne et puissante."
+    },
+    {
+        "name": "Pourquoi devrais-je utiliser yNotes ?",
+        "answer": "yNotes est sécurisée, respectueuse de la confidentialité, open source et ajoute de nombreuses fonctionnalités spéciales. *Et puis why not* ? xD"
+    },
+    {
+        "name": "Comment télécharger yNotes ?",
+        "answer": "Consultez le site officiel : **<https://ynotes.fr/>**\n\nSur le Google Play Store :\n<https://play.google.com/store/apps/details?id=fr.ynotes>\n\nSur l'App Store :\n<https://apps.apple.com/fr/app/ynotes/id1563624059>\n\nDepuis le repo. GitHub :\n<https://github.com/ModernChocolate/ynotes>"
+    },
+    {
+        "name": "Est ce que mon service scolaire est compatible ?",
+        "answer": "yNotes est actuellement compatible avec les plateformes Ecole Directe et avec Pronote.\nVous devez pour l'instant posséder un compte élève pour accéder à vos données."
+    },
+    {
+        "name": "Mon service scolaire n'est pas référencé !",
+        "answer": "Il n'est pour l'heure pas prévu d'ajouter d'autres compatibilités avec d'autres services scolaires. Mais :\n- Si tu as des problèmes pour te connecter avec les services existants (Pronote et EcoleDirecte) tu peux signaler le problème dans <#838039639737499672>.\n- Tu peux développer toi même une API à l'aide de la documentation fournie sur le repo Github de l'application, et éventuellement le soumettre dans une pull request."
+    },
+    {
+        "name": "Pourquoi ce nom yNotes ?",
+        "answer": "La question m'a souvent été posée ! Le nom de l'application ne se pronnonce pas \"i grec notes\", mais Why not (\"pourquoi pas\"). :smile:"
+    },
+    {
+        "name": "Pourquoi le projet est-il en suspens ?",
+        "answer": "Nous n'avons actuellement pas le temps de maintenir yNotes : nous sommes des étudiants et travaillions sur le projet durant notre temps libre. Peut-être y reviendrons nous plus tard, mais nous ne pouvons pas vous donner de date précise s!\nNous effectuons de temps en temps de petits correctifs lors que nous avons le temps. Mais ils ne permettent que de corriger des problèmes critiques et n'ajoutent pas de fonctionnalités."
+    }
+]

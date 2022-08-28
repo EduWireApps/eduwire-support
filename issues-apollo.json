@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Qu'est ce que Apollo ?",
+        "answer": "Apollo est votre nouvelle application d'écriture de paroles sobre et efficace\n\n:feather: Réveillez le poète qui est en vous et écrivez quand vous le souhaitez dans une interface épurée.\n\n:record_button: Posez quelques freestyles du bout du doigt\n\n:hammer: Editez rapidement vos enregistrements et ajoutez une piste de fond\n\n:rocket: Exportez vos paroles ou votre composition en un tap"
+    },
+    {
+        "name": "Comment installer Apollo ?",
+        "answer": "Apollo est disponible pour vos appareils Android depuis le Google Play store:\nhttps://play.google.com/store/apps/details?id=fr.apollo\nNous ouvrirons ensuite l'accès aux usagers iOS."
+    },
+    {
+        "name": "Qui travaille sur l'application ?",
+        "answer": "Je suis Josselin (aka JsonLines) et je suis un jeune développeur français. J'ai décidé d'initier le projet Apollo, et j'espère que certains d'entre vous voudront également s'y atteler !\nLes applications à la collaboration débuteront en 2023."
+    },
+    {
+        "name": "Pourquoi c'est payant ?",
+        "answer": "Les rentes de l'application permettent principalement de rembourser les frais applicatifs. Ils récompensent également notre travail sur l'application."
+    },
+    {
+        "name": "Combien coûte Apollo ?",
+        "answer": "**\nL'abonnement mensuel coûte 0,99€ TTC**\n**L'abonnement annuel** vous fait gagner presque 2 mois, c'est **9,99€ par an**.\n*Nous avons activé l'option 'Famille', pour les utilisateurs iOS, inutile de repayer l'abonnement pour chaque appareil.*\n\nCa vous semble toujours trop cher ? Tapez `6`"
+    },
+    {
+        "name": "Puis-je obtenir Apollo Premium gratuitement ?",
+        "answer": "Nous mettons régulièrement en jeu des **giveaways d'abonnements** Apollo Premium sur ce serveur et sur les réseaux sociaux de Apollo. Restez à l'écoute !"
+    },
+    {
+        "name": "C'est closed source ?",
+        "answer": "Nous voulons **vraiment** rendre Apollo open source. Cependant, des applications clones sèmeraient la confusion sur le PlayStore ou l'App Store, ainsi nous attendons seulement que **l'application gagne un petit peu en popularité.**\nNous ne souhaitons pas vous empêcher de déboguer, collaborer ou même modifier l'application source (même pour en faire une sans publicités :pirate_flag:). L'objectif est seulement que tout le monde puisse collaborer à une seule application !\nNous nous engageons à rendre l'application open-source lorsqu'un certain stade de popularité sera dépassé."
+    },
+    {
+        "name": "Comment puis-je collaborer ?",
+        "answer": "\n- Les applications **officielles** au développement ou à l'équipe de création d'Apollo n'ouvriront qu'en 2023.\n\n- Consultez `7` pour en savoir plus sur l'ouverture à l'open-source de Apollo."
+    },
+    {
+        "name": "Je paye Apollo premium mais je vois encore des publicités",
+        "answer": "Parfois l'abonnement ne se répercute pas dans l'application (délais d'achat des stores ou bug). Il vous suffit de redémarrer l'application pour vous débarasser des limitations."
+    },
+    {
+        "name": "J'ai repéré un bug",
+        "answer": "Nous n'avons pas encore intégré l'outil de rapport manuel de bug. Nous trackons automatiquement certains bugs dans l'application et recevons des rapports anonymes.\nContactez-nous à contact@ynotes.fr pour signaler votre bug."
+    }
+]

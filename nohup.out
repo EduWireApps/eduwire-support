@@ -1,0 +1,32 @@
+node:internal/modules/cjs/loader:936
+  throw err;
+  ^
+
+Error: Cannot find module '/Users/administrator/development/eduwire-support/index.'
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:17:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+Ready. Logged as EduWire#3133.
+Ready. Logged as EduWire#3133.
+Ready. Logged as EduWire#3133.
+Ready. Logged as EduWire#3133.
+Ready. Logged as EduWire#3133.
+/Users/administrator/development/eduwire-support/node_modules/discord.js/src/rest/RequestHandler.js:154
+      throw new DiscordAPIError(request.path, data, request.method, res.status);
+            ^
+
+DiscordAPIError: Unknown Message
+    at RequestHandler.execute (/Users/administrator/development/eduwire-support/node_modules/discord.js/src/rest/RequestHandler.js:154:13)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async RequestHandler.push (/Users/administrator/development/eduwire-support/node_modules/discord.js/src/rest/RequestHandler.js:39:14)
+    at async MessageManager.delete (/Users/administrator/development/eduwire-support/node_modules/discord.js/src/managers/MessageManager.js:126:5) {
+  method: 'delete',
+  path: '/channels/838042187575853126/messages/979151758490239046',
+  code: 10008,
+  httpStatus: 404
+}
